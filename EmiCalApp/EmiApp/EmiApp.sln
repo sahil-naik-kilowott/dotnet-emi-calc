@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31912.275
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmiApp", "EmiApp.csproj", "{B978C619-F162-4F63-BC90-7E2A9642A907}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmiApp.Cmdline", "..\EmiApp.Cmdline\EmiApp.Cmdline.csproj", "{627791D9-E14D-4ED1-9325-9E8121C8675A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B978C619-F162-4F63-BC90-7E2A9642A907}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B978C619-F162-4F63-BC90-7E2A9642A907}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B978C619-F162-4F63-BC90-7E2A9642A907}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B978C619-F162-4F63-BC90-7E2A9642A907}.Release|Any CPU.Build.0 = Release|Any CPU
+		{627791D9-E14D-4ED1-9325-9E8121C8675A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{627791D9-E14D-4ED1-9325-9E8121C8675A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{627791D9-E14D-4ED1-9325-9E8121C8675A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{627791D9-E14D-4ED1-9325-9E8121C8675A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4D863BEB-9DDB-4195-8013-ADDBDDF22BE0}
+	EndGlobalSection
+EndGlobal
