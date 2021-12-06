@@ -15,8 +15,8 @@ namespace ConsoleApp1
             Console.Write("Enter the Price of the Vehicle: ");
             int Price= Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter Rate of interest: ");
-            double rate= Convert.ToInt32(Console.ReadLine());
-            double ROI =rate / 100;
+            double Rate= Convert.ToInt32(Console.ReadLine());
+            double ROI =Rate / 100;
             Console.Write("Enter Loan Duration: ");
             int Term= Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter Monthly Compounding: ");
