@@ -13,23 +13,23 @@ namespace ConsoleApp1
 
 
             Console.Write("Enter the Price of the Vehicle: ");
-            int p= Convert.ToInt32(Console.ReadLine());
+            int Price= Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter Rate of interest: ");
             double rate= Convert.ToInt32(Console.ReadLine());
-            double i =rate / 100;
+            double ROI =rate / 100;
             Console.Write("Enter Loan Duration: ");
-            int t= Convert.ToInt32(Console.ReadLine());
+            int Term= Convert.ToInt32(Console.ReadLine());
             Console.Write("Enter Monthly Compounding: ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            int Months = Convert.ToInt32(Console.ReadLine());
 
             
 
             var spObj = new EmiCalculation();
 
-            spObj.p = p;
-            spObj.i = i;
-            spObj.t = t;
-            spObj.n = n;
+            spObj.P = Price;
+            spObj.I = ROI;
+            spObj.T = Term;
+            spObj.N = Months;
 
             var res=spObj.GetEmiResult();
 

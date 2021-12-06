@@ -9,12 +9,12 @@ namespace ConsoleApp1
     internal class EmiCalculation
     {
 
-        internal int p { private get; set; }
-        internal double i { private get; set; }
+        internal int P { private get; set; }
+        internal double I { private get; set; }
 
-        internal int t { private get; set; }
+        internal int T { private get; set; }
 
-        internal int n{ private get; set; }
+        internal int N{ private get; set; }
 
         internal EmiResult GetEmiResult()
         {
@@ -27,11 +27,11 @@ namespace ConsoleApp1
         {
             double result = 0;
 
-            result =  (1 + (i / n));
+            result =  (1 + (I / N));
 
-            result = p*Math.Pow(result,(t*n));
+            result = P*Math.Pow(result,(T*N));
 
-            result = result / (t * n);
+            result = result / (T * N);
 
             result = Math.Round(result, 2);
 
