@@ -10,31 +10,49 @@ namespace ConsoleApp1
 
         public static void Main(string[] args)
         {
-
-
-            Console.Write("Enter the Price of the Vehicle: ");
-            int Price= Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter Rate of interest: ");
-            double Rate= Convert.ToInt32(Console.ReadLine());
-            double ROI =Rate / 100;
-            Console.Write("Enter Loan Duration: ");
-            int Term= Convert.ToInt32(Console.ReadLine());
-            Console.Write("Enter Monthly Compounding: ");
-            int Months = Convert.ToInt32(Console.ReadLine());
-
+            int Price,Term,Months;
+            double Rate, ROI;
             
 
-            var spObj = new EmiCalculation();
 
-            spObj.P = Price;
-            spObj.I = ROI;
-            spObj.T = Term;
-            spObj.N = Months;
+            try
+            {
 
-            var res=spObj.GetEmiResult();
+                Console.Write("Enter the Price of the Vehicle: ");
+                Price = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter Rate of interest: ");
+                Rate = Convert.ToInt32(Console.ReadLine());
+                ROI = Rate / 100;
+                Console.Write("Enter Loan Duration: ");
+                Term = Convert.ToInt32(Console.ReadLine());
+                Console.Write("Enter Monthly Compounding: ");
+                Months = Convert.ToInt32(Console.ReadLine());
 
-            Console.WriteLine($"Monthly Emi: {res.calculate} INR");
 
+
+                var spObj = new EmiCalculation();
+
+                spObj.P = Price;
+                spObj.I = ROI;
+                spObj.T = Term;
+                spObj.N = Months;
+
+                var res = spObj.GetEmiResult();
+
+                Console.WriteLine($"Monthly Emi: {res.calculate} INR");
+
+            }
+
+            catch(Exception ex)
+            {
+                Console.Write("Error info:" + ex.Message);
+
+            }
+
+            finally
+            {
+                Console.WriteLine("Now Retry the program with different parameters.");
+            }
 
 
 
