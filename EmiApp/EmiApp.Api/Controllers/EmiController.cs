@@ -5,8 +5,7 @@ namespace EmiApp.Api.Controllers
 {
 
 
-    
-    [Route("api/[controller]")]
+  
     [ApiController]
 
     public class EmiController: ControllerBase
